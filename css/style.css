@@ -1,0 +1,85 @@
+.animation-block {
+	position: relative;
+	margin: 0 auto;
+}
+
+.background {
+	width: 100%;
+	position: relative;
+	display: block;
+	z-index: 1;
+	background-size: cover;
+	background-position: center;
+
+}
+
+
+.balloon {
+	width: 200px;
+	
+	position: absolute;
+	animation: balloon 10s infinite;
+	z-index: 30;
+	bottom: 10px;
+	right: 300px;
+	
+}
+
+@keyframes balloon {
+	0% {bottom: 0px; left: 0px;  }
+	50% {bottom: 600px; left: 600px; }
+	100% {bottom: 1100px; left: 1800px }
+}
+
+.cloud {
+	width: 200px;
+	position: absolute;
+	z-index: 25;
+	right: 10px;
+	top: 500px;
+	animation: cloud 15s infinite ;
+}
+
+@keyframes cloud {
+	0% { right: 0px; top: 500px; }
+	20% { right: 300px; top: 350px;}
+	35% { right: 600px; top:200px }
+	50% { right: 900px; top: 250px; }
+	75% { right: 1200px; top:  150px}
+	85% { right: 1500px; top: 100px; }
+	100% { right: 1900px; top: 0px; }
+
+
+}
+.plane {
+	width: 200px;
+	position: absolute;
+	z-index: 20;
+	right: 10px;
+	top: 250px;
+	animation: plane 15s infinite;
+
+}
+@keyframes plane {
+	0% { right: 0px; top: 250px; transform: rotate(0deg); }
+	
+	100% { right: 1900px; top: 250px; transform: rotate(45deg);}
+
+}
+.sun {
+	width: 300px;
+	position: absolute;
+	z-index: 30;
+	animation: sun 5s infinite 3s alternate;
+	left: 40%;
+	top: 30%;
+}
+@keyframes sun {
+	0% { transform: translateX(0px) rotate(0deg);}
+	25% { transform:translateX(0px) rotate(45deg);}
+	50% { transform:translateX(0px) rotate(360deg);}
+	75% { transform: translateX(0px)rotate(45deg);}
+	100% {transform:translateX(0px) rotate(0deg);}
+}
+
+
